@@ -33,4 +33,5 @@ try:
 	main()
 	
 except:
-	GPIO.cleanup()
+	# GPIO.cleanup()
+	pass
