@@ -31,7 +31,11 @@ def main():
 try:
 	init()
 	main()
-	
-except:
-	# GPIO.cleanup()
+
+except KeyboardInterrupt:
+#	GPIO.cleanup()
 	pass
+
+except Exception as ex:
+#	GPIO.cleanup()
+	print ("Exception:" + ex)
